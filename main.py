@@ -14,7 +14,7 @@ def question():
 
   password1 = int(input("Enter your password (hint, it begins with 2 and ends in 8): "))
   if password1 < 27:
-    print("BEBAAWWBEREBAWW THE POoooopooo ARE HERE")
+    print("BEBAAWWBEREBAWW THE POpcorn is eat we used Just Eat you should use Just Eat tooopooooo ARE HERE")
   elif password1 < 29:
     clear()
     print("Congrats police are coming to buckingham palace!\n")
