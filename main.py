@@ -10,7 +10,6 @@ my_secret = os.environ['password']
 red = "\033[1;31m"
 white = "\033[0;37m"
 
-
 def question():
 
   password1 = int(input("Enter your password (hint, it begins with 2 and ends in 8): "))
