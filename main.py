@@ -1,8 +1,6 @@
 import os
 from replit import db
 
-
-
 keys = db.keys()
 
 print(keys)
@@ -84,22 +82,22 @@ def loginsystem():
           exitadmin = 0
           
               
-        if admin == 2:
+      if admin == 2:
+        clear()
+        print("Here are the list of users:\n")
+        print(keys)
+        user = input("Please enter the name of the user you would like to remove\n--> ")
+        del db[user]
+        clear()
+        print("Here is the updated list of users:\n")
+        print(keys)
+        admin = input("All done! "+user+" has been removed.\nWould you like to exit admin?\n\n--> ")
+        if admin == "yes":
+          exitadmin = 1
           clear()
-          print("Here are the list of users:\n")
-          print(keys)
-          user = input("Please enter the name of the user you would like to remove\n--> ")
-          del db[user]
-          clear()
-          print("Here is the updated list of users:\n")
-          print(keys)
-          admin = input("All done! "+user+" has been removed.\nWould you like to exit admin?\n\n--> ")
-          if admin == "yes":
-            exitadmin = 1
-            clear()
-            loginsystem()
-          else:
-            exitadmin = 0
+          loginsystem()
+        else:
+          exitadmin = 0
             
   else:
     value = db[username]
